@@ -1,18 +1,21 @@
-
         body, h1, h2, h3, p {
             margin: 0;
             padding: 0;
         }
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #000000;
             color: #333;
+            background-image: url('../assets/background1.png'); 
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-attachment: fixed;
         }
         header {
-            background-color: #35424a;
+            /* background-color: #35424a; */
             color: white;
             text-align: center;
-            padding: 2em 0;
+            padding: 0;
         }
         .container {
             max-width: 800px;
@@ -37,7 +40,7 @@
             color: #35424a;
         }
         p {
-            line-height: 1.5;
+            line-height: 1.2;
         }
         a {
             color: #007bff;
@@ -46,14 +49,15 @@
         footer {
             text-align: center;
             padding: 1em 0;
-            color: #888;
+            text-align:center;
+            color: white;
         }
         div{
             text-align: justify;
             text-justify: inter-word;
         }
         nav {
-            background-color: #35424a;
+            /* background-color: #35424a; */
             text-align: center;
             padding: 1em 0;
         }
@@ -67,6 +71,15 @@
         nav li {
             margin: 0 1em;
         }
+        @media screen and (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav li {
+                margin: 0.5em 0;
+            }
+        }
         nav a {
             color: white;
             text-decoration: none;
@@ -74,5 +87,48 @@
             transition: color 0.3s;
         }
         nav a:hover {
+            color: #007bff;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 20px auto;
+            display: block;
+        }  
+        #IDpicture { 
+            display: flex;
+            justify-content: center; /* Horizontally center */
+            align-items: center;     /* Vertically center */
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        .profile{
+            text-align: center;
+        }
+        .profile h1 {
+            margin: 0;
+        }
+        .profile h2 {
+            margin: 5px 0;
+            color: #777;
+        }
+        .name{
+            text-align: center;
+        }
+        .name  h2{ 
+            margin: 5px 0;
+            color: #ffffff;
+        }
+        .project:hover{
+            border: 0px solid;
+            padding: 10px;
+            box-shadow: 5px 5px 5px 5px #888888;
+        }
+        section a {
+            color: black;
+        }
+        section a:hover {
             color: #007bff;
         }
