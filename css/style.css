@@ -31,7 +31,7 @@
 
         #header{
             position: fixed;
-            top: 1px;
+            top: 0px;
             left: 1px;
             right: 1px;
             justify-content: center;
