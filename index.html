@@ -19,16 +19,16 @@
     </div>
     <nav class="top-nav">
         <ul>
-            <li><a href="#about"><u>About</u></a></li>
-            <li><a href="#experience"><u>Experience</u></a></li>
-            <li><a href="#skills"><u>Skills</u></a></li>
-            <li><a href="#projects"><u>Projects</u></a></li>
-            <li><a href="#education"><u>Education</u></a></li>
-            <li><a href="#contact"><u>Contact</u></a></li>
+            <li><a href="#" onclick="showContent('about')">About</a></li>
+            <li><a href="#" onclick="showContent('experience')">Experience</a></li>
+            <li><a href="#" onclick="showContent('project')">Projects</a></li>
+            <li><a href="#" onclick="showContent('skills')">Skills</a></li>
+            <li><a href="#" onclick="showContent('education')">Education</a></li>
+            <li><a href="#" onclick="showContent('contact')">Contact</a></li>
         </ul>
     </nav>
     </div>
-    <div class="container">
+    <div class="container" id="about-content">        
         <section id="about">
             <div class="project">
                 <p id ="about-me">
@@ -36,34 +36,29 @@
                 </p>
             </div>
         </section>
-        <br>
+    </div>
+        <div class="container" id="experience-content">
         <section id="experience">
             <h2>Relevant Experience</h2>
             <div class="project">
                     <strong>United Marine Training Centre, Inc. - Software Engineer</strong> <br> <em>Dec 2022 - Present</em><br>
-                    <li>Develop and redesign internal application using C#, VB.Net, ASP.NET C#, SQL, MySQL, and PostgreSQL.</li>
             </div>
             <div class="project">
                     <strong>LTO Muntinlupa - Records Officer Aide/ Data Encoder/ System Analyst</strong><br>
                     <em>Dec 2021 - Dec 2022</em><br>
-                    <li>Installed and configured computer hardware, software, networks, printers, and scanners.</li>
-                    <li>Provided technical support across the company and assisted in renewing Driver`s License and Motor Vehicle Registration.</li>
-                    <li>Accurate data entry, efficient record maintenance, confidential handling. Collaborate for seamless record requests. Support Records Officer's tasks</li>
             </div>
             <div class="project">
                     <strong>Marlow Navigation Phils., Inc. - Solutions Developer</strong><br>
                     <em>Jul 2021 - Nov 2021</em><br>
-                    <li>Develop and redesign internal application using C#, ASP.NET C#, and SQL.</li>
             </div>
             <div class="project">
                 <li>
                     <strong>LTO Muntinlupa - IT Web Developer</strong><br>
                     <em>Jul 2020 - Jul 2021</em><br>
-                    <li>Developed software for document scanning with email and SMS blast using Visual Studio WinForms, C#, PHP, SQL, and MySQL.</li>
-                    <li>Provided technical support and maintained computer systems and networks.</li>
             </div>
         </section>
-        <br>
+        </div>
+        <div class="container" id="project-content">
         <section id="projects">
             <h2>Projects</h2>
             <div class="project">
@@ -152,7 +147,8 @@
                 </p>
             </div>
         </section>
-        <br>
+        </div>
+        <div class="container" id="skills-content">
         <section id ="skills">
             <h2>Skills & Proficiencies</h2>
                 <div class="project">
@@ -163,7 +159,8 @@
                     <li>IoT Tools: Arduino, NFC Card Reader, GSM Modem</li>
                 </div>
         </section>
-        <br>
+        </div>
+        <div class="container" id="education-content">
         <section id="education">
             <h2>Education</h2>
             <div class="project">
@@ -172,18 +169,13 @@
                 <p>Graduated: January 2020</p>
             </div>
         </section>
-<br>
+        </div>
+        <div class="container" id="contact-content">
         <section id="contact">
             <p>Feel free to reach out to me at <a href="mailto:jeerhrohit7@gmail.com">jeerhrohit7@gmail.com</a></p>
             <p>Connect with me on <a href="https://www.linkedin.com/in/rjeerh-7853b9176/">LinkedIn</a> | Follow me on <a href="https://www.facebook.com/rjeerh">Facebook </a> or <a href="https://www.instagram.com/_rjeerh">Instagram</a></p>
         </section>
-    </div>
-    <footer>
-        <nav class = "footer-nav">
-            <ul>
-                <li><strong><a href="#top"><u>Back to Top</u></a></strong></li>
-            </ul>
-        </nav>
-    </footer>
+        </div>
+    <script src="script/script.js"></script> <!-- Link to your JavaScript file -->
 </body>
 </html>

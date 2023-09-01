@@ -1,11 +1,7 @@
-        body, h1, h2, h3, p {
-            margin: 0;
-            padding: 0;
-        }
-
-        /* body properties */
+         /* body properties */
         body {
             padding: 30px;
+            margin: 0;
             font-family: Arial, sans-serif;
             color: #ffffff;
             background-image: url('../assets/background1.png'); 
@@ -16,9 +12,13 @@
         h1, h2, h3 {
             color: #ffffff;
             margin-bottom: 10px;
+            margin: 0;
+            padding: 0;
         }
         p {
             line-height: 2.0;
+            margin: 0;
+            padding: 0;
         }
         /* info properties */
         #about-me{
@@ -57,13 +57,6 @@
             .top-nav li {
                 margin: 0.5em 0;
             }
-            /* img{
-                max-width: 100%;
-                height: auto;
-                border-radius: 50%;
-                margin: 20px auto;
-                display: block;
-            } */
         }        
 
         /* image properties */
@@ -83,7 +76,7 @@
         /* div properties */
         .container {
             max-width: 800px;
-            padding: 20px;
+            padding: 30px;
             border-radius: 5px;
             margin: 250px auto 0 auto;
         }
@@ -94,18 +87,7 @@
             border-radius: 5px;
             text-align: center;
         }
-        /*
-        .project:hover{
-            border: 0px solid;
-            padding: 10px;
-            box-shadow: 5px 5px 5px 5px #9dd8ff;
-        } */
         
-        footer {
-            text-align: center;
-            padding: 1em 0;
-            color: white;
-        }
         .top-nav {
             text-align: center;
             padding: 1em 0;
@@ -120,32 +102,13 @@
         .top-nav li {
             margin: 0 1em;
         }
- 
-        .top-nav a:hover {
+        a:hover {
             color: #007bff;
         }
-
-        .top-nav a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .footer-nav a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .footer-nav a:hover {
-            color: #007bff;
-        }
-
         html{
             scroll-behavior: smooth;
         }
-        section a {
-            color: rgb(255, 255, 255);
-        }
-        section a:hover {
-            color: #007bff;
+        a {
+            color: #ffffff;
+            text-decoration: none;
         }
